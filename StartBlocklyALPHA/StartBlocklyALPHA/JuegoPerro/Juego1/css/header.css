@@ -1,0 +1,62 @@
+﻿.logo-container{
+    width: 120px;
+    height: 120px;
+    padding: 0;
+    background-image:url(../media/hoc-logo.png);
+}
+
+.levels-bar {
+    text-align: center;
+    color: #ffffff;
+    cursor: default;
+    background-color: #87C5D8;
+    height: 40px;
+}
+
+.levels-bar li.lcolor0{
+	
+}
+
+.levels-bar li.lcolor2{
+    background-color: #28BB14;
+}
+
+.levels-bar li.lcolor1{
+    background-color: #1470BB;
+}
+
+.levels {
+    padding: 5px;
+    display: inline;
+}
+
+.levels>li {
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    margin: 4px;
+    text-align: center;
+    vertical-align: middle;
+    border: solid 2px #ccc;
+    background: #333;
+    border-radius: 10px;
+}
+
+.levels>li:not(.current-level):hover{
+    height: 11px;
+    width: 11px;
+    cursor: pointer;
+}
+
+.levels>.current-level {
+    height: 15px;
+    width: 15px;
+    font-size: 9px;
+    border-radius: 20px;
+    line-height: 12px;
+}
+
+
+.hdc-title {
+    font-family: 'Comfortaa', sans-serif;
+}

@@ -1,0 +1,1048 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A85582E2-C2B0-44A3-921A-BC160631FF50}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StartBlocklyALPHA</RootNamespace>
+    <AssemblyName>StartBlocklyALPHA</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Archives\appengine\apple-touch-icon.png" />
+    <Content Include="Archives\appengine\favicon.ico" />
+    <Content Include="Archives\appengine\README.txt" />
+    <Content Include="Archives\appengine\redirect.html" />
+    <Content Include="Archives\appengine\robots.txt" />
+    <Content Include="Archives\appengine\storage.js" />
+    <Content Include="Archives\blockly_compressed.js" />
+    <Content Include="Archives\blockly_uncompressed.js" />
+    <Content Include="Archives\blocks\colour.js" />
+    <Content Include="Archives\blocks\lists.js" />
+    <Content Include="Archives\blocks\logic.js" />
+    <Content Include="Archives\blocks\loops.js" />
+    <Content Include="Archives\blocks\math.js" />
+    <Content Include="Archives\blocks\procedures.js" />
+    <Content Include="Archives\blocks\text.js" />
+    <Content Include="Archives\blocks\variables.js" />
+    <Content Include="Archives\blocks_compressed.js" />
+    <Content Include="Archives\BloquesSave.xml" />
+    <Content Include="Archives\core\block.js" />
+    <Content Include="Archives\core\blockly.js" />
+    <Content Include="Archives\core\blocks.js" />
+    <Content Include="Archives\core\block_svg.js" />
+    <Content Include="Archives\core\bubble.js" />
+    <Content Include="Archives\core\comment.js" />
+    <Content Include="Archives\core\connection.js" />
+    <Content Include="Archives\core\contextmenu.js" />
+    <Content Include="Archives\core\css.js" />
+    <Content Include="Archives\core\field.js" />
+    <Content Include="Archives\core\field_angle.js" />
+    <Content Include="Archives\core\field_checkbox.js" />
+    <Content Include="Archives\core\field_colour.js" />
+    <Content Include="Archives\core\field_date.js" />
+    <Content Include="Archives\core\field_dropdown.js" />
+    <Content Include="Archives\core\field_image.js" />
+    <Content Include="Archives\core\field_label.js" />
+    <Content Include="Archives\core\field_textinput.js" />
+    <Content Include="Archives\core\field_variable.js" />
+    <Content Include="Archives\core\flyout.js" />
+    <Content Include="Archives\core\generator.js" />
+    <Content Include="Archives\core\icon.js" />
+    <Content Include="Archives\core\inject.js" />
+    <Content Include="Archives\core\input.js" />
+    <Content Include="Archives\core\msg.js" />
+    <Content Include="Archives\core\mutator.js" />
+    <Content Include="Archives\core\names.js" />
+    <Content Include="Archives\core\procedures.js" />
+    <Content Include="Archives\core\realtime-client-utils.js" />
+    <Content Include="Archives\core\realtime.js" />
+    <Content Include="Archives\core\scrollbar.js" />
+    <Content Include="Archives\core\toolbox.js" />
+    <Content Include="Archives\core\tooltip.js" />
+    <Content Include="Archives\core\trashcan.js" />
+    <Content Include="Archives\core\utils.js" />
+    <Content Include="Archives\core\variables.js" />
+    <Content Include="Archives\core\warning.js" />
+    <Content Include="Archives\core\widgetdiv.js" />
+    <Content Include="Archives\core\workspace.js" />
+    <Content Include="Archives\core\workspace_svg.js" />
+    <Content Include="Archives\core\xml.js" />
+    <Content Include="Archives\core\zoom_controls.js" />
+    <Content Include="Archives\dart_compressed.js" />
+    <Content Include="Archives\demos\blockfactory\blocks.js" />
+    <Content Include="Archives\demos\blockfactory\factory.js" />
+    <Content Include="Archives\demos\blockfactory\icon.png" />
+    <Content Include="Archives\demos\blockfactory\index.html" />
+    <Content Include="Archives\demos\blockfactory\link.png" />
+    <Content Include="Archives\demos\code\code.js" />
+    <Content Include="Archives\demos\code\icon.png" />
+    <Content Include="Archives\demos\code\icons.png" />
+    <Content Include="Archives\demos\code\index.html" />
+    <Content Include="Archives\demos\code\msg\ar.js" />
+    <Content Include="Archives\demos\code\msg\be-tarask.js" />
+    <Content Include="Archives\demos\code\msg\br.js" />
+    <Content Include="Archives\demos\code\msg\ca.js" />
+    <Content Include="Archives\demos\code\msg\cs.js" />
+    <Content Include="Archives\demos\code\msg\da.js" />
+    <Content Include="Archives\demos\code\msg\de.js" />
+    <Content Include="Archives\demos\code\msg\el.js" />
+    <Content Include="Archives\demos\code\msg\en.js" />
+    <Content Include="Archives\demos\code\msg\es.js" />
+    <Content Include="Archives\demos\code\msg\fa.js" />
+    <Content Include="Archives\demos\code\msg\fr.js" />
+    <Content Include="Archives\demos\code\msg\he.js" />
+    <Content Include="Archives\demos\code\msg\hrx.js" />
+    <Content Include="Archives\demos\code\msg\hu.js" />
+    <Content Include="Archives\demos\code\msg\ia.js" />
+    <Content Include="Archives\demos\code\msg\is.js" />
+    <Content Include="Archives\demos\code\msg\it.js" />
+    <Content Include="Archives\demos\code\msg\ja.js" />
+    <Content Include="Archives\demos\code\msg\ko.js" />
+    <Content Include="Archives\demos\code\msg\mk.js" />
+    <Content Include="Archives\demos\code\msg\ms.js" />
+    <Content Include="Archives\demos\code\msg\nb.js" />
+    <Content Include="Archives\demos\code\msg\nl.js" />
+    <Content Include="Archives\demos\code\msg\oc.js" />
+    <Content Include="Archives\demos\code\msg\pl.js" />
+    <Content Include="Archives\demos\code\msg\pms.js" />
+    <Content Include="Archives\demos\code\msg\pt-br.js" />
+    <Content Include="Archives\demos\code\msg\ro.js" />
+    <Content Include="Archives\demos\code\msg\ru.js" />
+    <Content Include="Archives\demos\code\msg\sc.js" />
+    <Content Include="Archives\demos\code\msg\sk.js" />
+    <Content Include="Archives\demos\code\msg\sr.js" />
+    <Content Include="Archives\demos\code\msg\sv.js" />
+    <Content Include="Archives\demos\code\msg\th.js" />
+    <Content Include="Archives\demos\code\msg\tlh.js" />
+    <Content Include="Archives\demos\code\msg\tr.js" />
+    <Content Include="Archives\demos\code\msg\uk.js" />
+    <Content Include="Archives\demos\code\msg\vi.js" />
+    <Content Include="Archives\demos\code\msg\zh-hans.js" />
+    <Content Include="Archives\demos\code\msg\zh-hant.js" />
+    <Content Include="Archives\demos\code\style.css" />
+    <Content Include="Archives\demos\fixed\icon.png" />
+    <Content Include="Archives\demos\fixed\index.html" />
+    <Content Include="Archives\demos\generator\icon.png" />
+    <Content Include="Archives\demos\generator\index.html" />
+    <Content Include="Archives\demos\graph\icon.png" />
+    <Content Include="Archives\demos\graph\index.html" />
+    <Content Include="Archives\demos\headless\icon.png" />
+    <Content Include="Archives\demos\headless\index.html" />
+    <Content Include="Archives\demos\index.html" />
+    <Content Include="Archives\demos\interpreter\acorn_interpreter.js" />
+    <Content Include="Archives\demos\interpreter\icon.png" />
+    <Content Include="Archives\demos\interpreter\index.html" />
+    <Content Include="Archives\demos\maxBlocks\icon.png" />
+    <Content Include="Archives\demos\maxBlocks\index.html" />
+    <Content Include="Archives\demos\plane\blocks.js" />
+    <Content Include="Archives\demos\plane\generated\ar.js" />
+    <Content Include="Archives\demos\plane\generated\be-tarask.js" />
+    <Content Include="Archives\demos\plane\generated\br.js" />
+    <Content Include="Archives\demos\plane\generated\ca.js" />
+    <Content Include="Archives\demos\plane\generated\da.js" />
+    <Content Include="Archives\demos\plane\generated\de.js" />
+    <Content Include="Archives\demos\plane\generated\el.js" />
+    <Content Include="Archives\demos\plane\generated\en.js" />
+    <Content Include="Archives\demos\plane\generated\es.js" />
+    <Content Include="Archives\demos\plane\generated\fa.js" />
+    <Content Include="Archives\demos\plane\generated\fr.js" />
+    <Content Include="Archives\demos\plane\generated\he.js" />
+    <Content Include="Archives\demos\plane\generated\hrx.js" />
+    <Content Include="Archives\demos\plane\generated\hu.js" />
+    <Content Include="Archives\demos\plane\generated\ia.js" />
+    <Content Include="Archives\demos\plane\generated\is.js" />
+    <Content Include="Archives\demos\plane\generated\it.js" />
+    <Content Include="Archives\demos\plane\generated\ja.js" />
+    <Content Include="Archives\demos\plane\generated\ko.js" />
+    <Content Include="Archives\demos\plane\generated\ms.js" />
+    <Content Include="Archives\demos\plane\generated\nb.js" />
+    <Content Include="Archives\demos\plane\generated\nl.js" />
+    <Content Include="Archives\demos\plane\generated\pl.js" />
+    <Content Include="Archives\demos\plane\generated\pms.js" />
+    <Content Include="Archives\demos\plane\generated\pt-br.js" />
+    <Content Include="Archives\demos\plane\generated\ro.js" />
+    <Content Include="Archives\demos\plane\generated\ru.js" />
+    <Content Include="Archives\demos\plane\generated\sc.js" />
+    <Content Include="Archives\demos\plane\generated\sv.js" />
+    <Content Include="Archives\demos\plane\generated\th.js" />
+    <Content Include="Archives\demos\plane\generated\tr.js" />
+    <Content Include="Archives\demos\plane\generated\uk.js" />
+    <Content Include="Archives\demos\plane\generated\vi.js" />
+    <Content Include="Archives\demos\plane\generated\zh-hans.js" />
+    <Content Include="Archives\demos\plane\generated\zh-hant.js" />
+    <Content Include="Archives\demos\plane\icon.png" />
+    <Content Include="Archives\demos\plane\index.html" />
+    <Content Include="Archives\demos\plane\plane.js" />
+    <Content Include="Archives\demos\plane\README.txt" />
+    <Content Include="Archives\demos\plane\slider.js" />
+    <Content Include="Archives\demos\plane\soy\SoyMsgExtractor.jar" />
+    <Content Include="Archives\demos\plane\soy\SoyToJsSrcCompiler.jar" />
+    <Content Include="Archives\demos\plane\soy\soyutils.js" />
+    <Content Include="Archives\demos\plane\style.css" />
+    <Content Include="Archives\demos\prettify.css" />
+    <Content Include="Archives\demos\prettify.js" />
+    <Content Include="Archives\demos\realtime\index.html" />
+    <Content Include="Archives\demos\resizable\icon.png" />
+    <Content Include="Archives\demos\resizable\index.html" />
+    <Content Include="Archives\demos\resizable\overlay.html" />
+    <Content Include="Archives\demos\rtl\icon.png" />
+    <Content Include="Archives\demos\rtl\index.html" />
+    <Content Include="Archives\demos\storage\icon.png" />
+    <Content Include="Archives\demos\storage\index.html" />
+    <Content Include="Archives\demos\toolbox\icon.png" />
+    <Content Include="Archives\demos\toolbox\index.html" />
+    <Content Include="Archives\example\javascript_compressed.js" />
+    <Content Include="Archives\generators\dart.js" />
+    <Content Include="Archives\generators\dart\colour.js" />
+    <Content Include="Archives\generators\dart\lists.js" />
+    <Content Include="Archives\generators\dart\logic.js" />
+    <Content Include="Archives\generators\dart\loops.js" />
+    <Content Include="Archives\generators\dart\math.js" />
+    <Content Include="Archives\generators\dart\procedures.js" />
+    <Content Include="Archives\generators\dart\text.js" />
+    <Content Include="Archives\generators\dart\variables.js" />
+    <Content Include="Archives\generators\javascript.js" />
+    <Content Include="Archives\generators\javascript\colour.js" />
+    <Content Include="Archives\generators\javascript\lists.js" />
+    <Content Include="Archives\generators\javascript\logic.js" />
+    <Content Include="Archives\generators\javascript\loops.js" />
+    <Content Include="Archives\generators\javascript\math.js" />
+    <Content Include="Archives\generators\javascript\procedures.js" />
+    <Content Include="Archives\generators\javascript\text.js" />
+    <Content Include="Archives\generators\javascript\variables.js" />
+    <Content Include="Archives\generators\php.js" />
+    <Content Include="Archives\generators\php\colour.js" />
+    <Content Include="Archives\generators\php\lists.js" />
+    <Content Include="Archives\generators\php\logic.js" />
+    <Content Include="Archives\generators\php\loops.js" />
+    <Content Include="Archives\generators\php\math.js" />
+    <Content Include="Archives\generators\php\procedures.js" />
+    <Content Include="Archives\generators\php\text.js" />
+    <Content Include="Archives\generators\php\variables.js" />
+    <Content Include="Archives\generators\python.js" />
+    <Content Include="Archives\generators\python\colour.js" />
+    <Content Include="Archives\generators\python\lists.js" />
+    <Content Include="Archives\generators\python\logic.js" />
+    <Content Include="Archives\generators\python\loops.js" />
+    <Content Include="Archives\generators\python\math.js" />
+    <Content Include="Archives\generators\python\procedures.js" />
+    <Content Include="Archives\generators\python\text.js" />
+    <Content Include="Archives\generators\python\variables.js" />
+    <Content Include="Archives\javascript_compressed.js" />
+    <Content Include="Archives\media\1x1.gif" />
+    <Content Include="Archives\media\anon.jpeg" />
+    <Content Include="Archives\media\click.mp3" />
+    <Content Include="Archives\media\click.wav" />
+    <Content Include="Archives\media\delete.mp3" />
+    <Content Include="Archives\media\delete.wav" />
+    <Content Include="Archives\media\disconnect.mp3" />
+    <Content Include="Archives\media\disconnect.wav" />
+    <Content Include="Archives\media\handclosed.cur" />
+    <Content Include="Archives\media\handdelete.cur" />
+    <Content Include="Archives\media\handopen.cur" />
+    <Content Include="Archives\media\icons.svg" />
+    <Content Include="Archives\media\progress.gif" />
+    <Content Include="Archives\media\quote0.png" />
+    <Content Include="Archives\media\quote1.png" />
+    <Content Include="Archives\media\sprites.png" />
+    <Content Include="Archives\media\sprites.svg" />
+    <Content Include="Archives\msg\js\ar.js" />
+    <Content Include="Archives\msg\js\az.js" />
+    <Content Include="Archives\msg\js\bcc.js" />
+    <Content Include="Archives\msg\js\be-tarask.js" />
+    <Content Include="Archives\msg\js\bg.js" />
+    <Content Include="Archives\msg\js\bn.js" />
+    <Content Include="Archives\msg\js\br.js" />
+    <Content Include="Archives\msg\js\ca.js" />
+    <Content Include="Archives\msg\js\cs.js" />
+    <Content Include="Archives\msg\js\da.js" />
+    <Content Include="Archives\msg\js\de.js" />
+    <Content Include="Archives\msg\js\el.js" />
+    <Content Include="Archives\msg\js\en.js" />
+    <Content Include="Archives\msg\js\es.js" />
+    <Content Include="Archives\msg\js\fa.js" />
+    <Content Include="Archives\msg\js\fi.js" />
+    <Content Include="Archives\msg\js\fr.js" />
+    <Content Include="Archives\msg\js\he.js" />
+    <Content Include="Archives\msg\js\hi.js" />
+    <Content Include="Archives\msg\js\hrx.js" />
+    <Content Include="Archives\msg\js\hu.js" />
+    <Content Include="Archives\msg\js\ia.js" />
+    <Content Include="Archives\msg\js\id.js" />
+    <Content Include="Archives\msg\js\is.js" />
+    <Content Include="Archives\msg\js\it.js" />
+    <Content Include="Archives\msg\js\ja.js" />
+    <Content Include="Archives\msg\js\ko.js" />
+    <Content Include="Archives\msg\js\lb.js" />
+    <Content Include="Archives\msg\js\lrc.js" />
+    <Content Include="Archives\msg\js\lt.js" />
+    <Content Include="Archives\msg\js\mk.js" />
+    <Content Include="Archives\msg\js\ms.js" />
+    <Content Include="Archives\msg\js\nb.js" />
+    <Content Include="Archives\msg\js\nl.js" />
+    <Content Include="Archives\msg\js\oc.js" />
+    <Content Include="Archives\msg\js\pl.js" />
+    <Content Include="Archives\msg\js\pms.js" />
+    <Content Include="Archives\msg\js\pt-br.js" />
+    <Content Include="Archives\msg\js\pt.js" />
+    <Content Include="Archives\msg\js\ro.js" />
+    <Content Include="Archives\msg\js\ru.js" />
+    <Content Include="Archives\msg\js\sc.js" />
+    <Content Include="Archives\msg\js\shn.js" />
+    <Content Include="Archives\msg\js\sk.js" />
+    <Content Include="Archives\msg\js\sq.js" />
+    <Content Include="Archives\msg\js\sr.js" />
+    <Content Include="Archives\msg\js\sv.js" />
+    <Content Include="Archives\msg\js\ta.js" />
+    <Content Include="Archives\msg\js\tcy.js" />
+    <Content Include="Archives\msg\js\th.js" />
+    <Content Include="Archives\msg\js\tl.js" />
+    <Content Include="Archives\msg\js\tlh.js" />
+    <Content Include="Archives\msg\js\tr.js" />
+    <Content Include="Archives\msg\js\uk.js" />
+    <Content Include="Archives\msg\js\vi.js" />
+    <Content Include="Archives\msg\js\zh-hans.js" />
+    <Content Include="Archives\msg\js\zh-hant.js" />
+    <Content Include="Archives\msg\messages.js" />
+    <Content Include="Archives\php_compressed.js" />
+    <Content Include="Archives\python_compressed.js" />
+    <Content Include="Archives\tests\generators\colour.xml" />
+    <Content Include="Archives\tests\generators\index.html" />
+    <Content Include="Archives\tests\generators\lists.xml" />
+    <Content Include="Archives\tests\generators\logic.xml" />
+    <Content Include="Archives\tests\generators\loops1.xml" />
+    <Content Include="Archives\tests\generators\loops2.xml" />
+    <Content Include="Archives\tests\generators\loops3.xml" />
+    <Content Include="Archives\tests\generators\math.xml" />
+    <Content Include="Archives\tests\generators\procedures.xml" />
+    <Content Include="Archives\tests\generators\text.xml" />
+    <Content Include="Archives\tests\generators\unittest.js" />
+    <Content Include="Archives\tests\generators\unittest_dart.js" />
+    <Content Include="Archives\tests\generators\unittest_javascript.js" />
+    <Content Include="Archives\tests\generators\unittest_php.js" />
+    <Content Include="Archives\tests\generators\unittest_python.js" />
+    <Content Include="Archives\tests\generators\variables.xml" />
+    <Content Include="Archives\tests\jsunit\blockly_test.js" />
+    <Content Include="Archives\tests\jsunit\generator_test.js" />
+    <Content Include="Archives\tests\jsunit\index.html" />
+    <Content Include="Archives\tests\jsunit\names_test.js" />
+    <Content Include="Archives\tests\jsunit\workspace_test.js" />
+    <Content Include="Archives\tests\jsunit\xml_test.js" />
+    <Content Include="Archives\tests\playground.html" />
+    <Content Include="assets\application-17dd4cc0afe604a926438d7dc6b27872.js" />
+    <Content Include="assets\application-aad9fab3afd06b3fc539295c97afd442.css" />
+    <Content Include="assets\css\common-80467c8b851f278bfcf0863d5b7e7195.css" />
+    <Content Include="assets\css\turtle-24b65fb21a962d9ce41272d1231786c8.css" />
+    <Content Include="assets\js\10f957f1ae.js" />
+    <Content Include="assets\js\analytics.js" />
+    <Content Include="assets\js\application-0b6320fa2b9e27290c047fac96524c8b.js" />
+    <Content Include="assets\js\blockly-6549877905679eab3c7691500866ab73.js" />
+    <Content Include="assets\js\code-studio-22774d55065b5e5841654b60d2a1fc77.js" />
+    <Content Include="assets\js\code-studio-9a40645ccd00e6ac3ef1aab68725ed79.js" />
+    <Content Include="assets\js\code-studio-c5f15162c924db70242d68ab9ef6b091.js" />
+    <Content Include="assets\js\code-studio-common-116011e6d4101be09ad84b15baaf27f6.js" />
+    <Content Include="assets\js\code-studio-common-5159c314d00afdbc38d09522af7d7d2c.js" />
+    <Content Include="assets\js\code-studio-common-d087ec4f6e4f25aa242dc065146bc6c5.js" />
+    <Content Include="assets\js\common.min-188f4a8b3c84a70fbbd44148095a4279.js" />
+    <Content Include="assets\js\common.min-db8f4d9bfb1c3077fade91f5bee8ef1e.js" />
+    <Content Include="assets\js\common.min-e79d2224ecd201ec75695344b8ea01fe.js" />
+    <Content Include="assets\js\common_locale-2d8840050d2c36545c1309ee932791c7.js" />
+    <Content Include="assets\js\es_es\blockly_locale-4788318d83e3b57556861f1c673634f8.js" />
+    <Content Include="assets\js\es_es\common_locale-4b3c955d369b00bc0627debbff810943.js" />
+    <Content Include="assets\js\es_es\turtle_locale-2b3932d3cae8dd6079e48e8d2396a5af.js" />
+    <Content Include="assets\js\initApp-2b353af88f5a08b6247709ad22c859a7.js" />
+    <Content Include="assets\js\initApp-7df2128df459db750ec045ed08d8793e.js" />
+    <Content Include="assets\js\initApp\initApp-ce78e04a1f24bd6191a3621d3b537c6d.js" />
+    <Content Include="assets\js\levelbuilder-851324e4ad3ff10c98fb9412d3831e9a.js" />
+    <Content Include="assets\js\marked\marked-2041ae7165b575a792861d854ddc17d1.js" />
+    <Content Include="assets\js\nr-918.min.js" />
+    <Content Include="assets\js\turtle.min-8155cd0d367d660a9eee915eaa0f8948.js" />
+    <Content Include="assets\spinner-big-213fdce14968f4202cfde928c8e25887.gif" />
+    <Content Include="assets\x_button-d627856b33ebb303f37ffd695e923ff9.png" />
+    <Content Include="blockly\media\1x1.gif" />
+    <Content Include="blockly\media\applab\blocks_glyph.gif" />
+    <Content Include="blockly\media\avatar.png" />
+    <Content Include="blockly\media\canclosed.png" />
+    <Content Include="blockly\media\canopen.png" />
+    <Content Include="blockly\media\skins\artist\avatar.png" />
+    <Content Include="blockly\media\skins\artist\failure_avatar.png" />
+    <Content Include="blockly\media\skins\artist\small_static_avatar.png" />
+    <Content Include="blockly\media\skins\artist\static_avatar.png" />
+    <Content Include="blockly\media\skins\artist\win_avatar.png" />
+    <Content Include="blockly\media\turnphone_horizontal.png" />
+    <Content Include="blockly\media\turtle\icons.png" />
+    <Content Include="blockly\media\turtle\loading.gif" />
+    <Content Include="GUI\Inicio.aspx" />
+    <Content Include="GUI\Juegos.aspx" />
+    <Content Include="GUI\Login.aspx" />
+    <Content Include="GUI\Modify.aspx" />
+    <Content Include="GUI\Proyectos.aspx" />
+    <Content Include="GUI\Registro.aspx" />
+    <Content Include="GUI\Traductor.aspx" />
+    <Content Include="JSspanish\JScript.js" />
+    <Content Include="JSspanish\JScript\colour.js" />
+    <Content Include="JSspanish\JScript\lists.js" />
+    <Content Include="JSspanish\JScript\logic.js" />
+    <Content Include="JSspanish\JScript\loops.js" />
+    <Content Include="JSspanish\JScript\math.js" />
+    <Content Include="JSspanish\JScript\procedures.js" />
+    <Content Include="JSspanish\JScript\text.js" />
+    <Content Include="JSspanish\JScript\variables.js" />
+    <Content Include="MasterPage\JuegoDibujar.aspx" />
+    <Content Include="MasterPage\JuegoDibujar2.aspx" />
+    <Content Include="MasterPage\JuegoDibujar3.aspx" />
+    <Content Include="MasterPage\JuegoFlappyBird\api\hour\begin_flappy.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\application-17dd4cc0afe604a926438d7dc6b27872.js" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\application-aad9fab3afd06b3fc539295c97afd442.css" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\codeorg-studio-logo-e24d7193f9e1b2e3f35587623b2fabff.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\css\common-80467c8b851f278bfcf0863d5b7e7195.css" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\css\flappy-43bf9dd7b3855e53698e54293ef0fac8.css" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\jquery-ui\ui-bg_flat_75_ffffff_40x100-66b22589d0fc959b460476ea579ea2c5.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\jquery-ui\ui-bg_glass_65_ffffff_1x400-b3cd9a420fcfd4bca52c6b76d2486146.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\jquery-ui\ui-bg_glass_75_e6e6e6_1x400-78b60ab54d71e2185242c1c59123ddec.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\js\blockly-6549877905679eab3c7691500866ab73.js" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\js\code-studio-22774d55065b5e5841654b60d2a1fc77.js" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\js\code-studio-common-116011e6d4101be09ad84b15baaf27f6.js" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\js\common.min-188f4a8b3c84a70fbbd44148095a4279.js" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\js\es_es\blockly_locale-4788318d83e3b57556861f1c673634f8.js" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\js\es_es\common_locale-2d8840050d2c36545c1309ee932791c7.js" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\js\es_es\flappy_locale-9183fb2f89d89ccd836ad8a4335afa3f.js" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\js\flappy.min-1d452503acfdfa3185e1e5972a9b5a3e.js" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\js\initApp\initApp-2b353af88f5a08b6247709ad22c859a7.js" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\js\levelbuilder-851324e4ad3ff10c98fb9412d3831e9a.js" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\js\marked\marked-2041ae7165b575a792861d854ddc17d1.js" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\notes\flappy01-d989f47a1a4800b2917820777ae4947f.jpg" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\notes\flappy02-c5243ee5b5059cadb799f54473e3c22c.jpg" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\notes\flappy03-a7eb2e79be5d45e6e2144fdc3f950f31.jpg" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\notes\flappy04-2eae390f357fd0b8bfb51f03f75cf1dd.jpg" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\notes\flappy05-09a635353f2a8ebb7216006c5f7c6e11.jpg" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\notes\flappy06-f93cdd66c20c566415984a3400b76a95.jpg" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\notes\flappy07-4ef365b7e544ff2aa18e94b4af264360.jpg" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\notes\flappy08-fef365d17791687659b676c993d0c83a.jpg" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\notes\flappy09-d5027dd33c33a41ea7e6ab5ca5093740.jpg" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\notes\flappy10-53f3bbfc7f26c628fec822378c407f37.jpg" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\spinner-big-213fdce14968f4202cfde928c8e25887.gif" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\x_button-d627856b33ebb303f37ffd695e923ff9.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\1x1.gif" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\applab\blocks_glyph.gif" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\canclosed.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\canopen.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\common_images\shared-sprites-26x26.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\handopen.cur" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\skins\flappy\avatar.gif" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\skins\flappy\background.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\skins\flappy\clickrun.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\skins\flappy\gameover.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\skins\flappy\getready.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\skins\flappy\goal.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\skins\flappy\ground.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\skins\flappy\instructions.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\skins\flappy\pato.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\skins\flappy\small_static_avatar.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\skins\flappy\static_avatar.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\skins\m0muv77.jpg" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\skins\pato.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\blockly\media\turnphone_horizontal.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\code_studio\assets\video_js\video-js.css" />
+    <Content Include="MasterPage\JuegoFlappyBird\c\video_thumbnails\14.jpg" />
+    <Content Include="MasterPage\JuegoFlappyBird\js-agent.newrelic.com\nr-918.min.js" />
+    <Content Include="MasterPage\JuegoFlappyBird\s.ytimg.com\yts\jsbin\www-widgetapi-vfITQYWXP\www-widgetapi.js" />
+    <Content Include="MasterPage\JuegoFlappyBird\shared\images\download_button.png" />
+    <Content Include="MasterPage\JuegoFlappyBird\www.youtube.com\favicon.ico" />
+    <Content Include="MasterPage\JuegoFlappyBird\yts\jsbin\www-widgetapi-vfITQYWXP\www-widgetapi.js" />
+    <Content Include="JuegoPerro\12.png" />
+    <Content Include="JuegoPerro\Juego1\blocks\movimiento.js" />
+    <Content Include="JuegoPerro\Juego1\blocks_compressed.js" />
+    <Content Include="JuegoPerro\Juego1\blocky_compressed.js" />
+    <Content Include="JuegoPerro\Juego1\boostrap\bootstrap.min.css" />
+    <Content Include="JuegoPerro\Juego1\boostrap\bootstrap.min.js" />
+    <Content Include="JuegoPerro\Juego1\crafty\crafty-min.js" />
+    <Content Include="JuegoPerro\Juego1\css\header.css" />
+    <Content Include="JuegoPerro\Juego1\css\style.css" />
+    <Content Include="JuegoPerro\Juego1\generators\movimiento.js" />
+    <Content Include="JuegoPerro\Juego1\javascript_compressed.js" />
+    <Content Include="JuegoPerro\Juego1\js1\blockyInit.js" />
+    <Content Include="JuegoPerro\Juego1\js1\content.js" />
+    <Content Include="JuegoPerro\Juego1\js1\highlight.packs.js" />
+    <Content Include="JuegoPerro\Juego1\js1\highlight\railscasts.css" />
+    <Content Include="JuegoPerro\Juego1\js1\jquery-2.1.4.min.js" />
+    <Content Include="JuegoPerro\Juego1\jsinterpreter\acorn_interpreter.js" />
+    <Content Include="JuegoPerro\Juego1\js\es.js" />
+    <Content Include="JuegoPerro\Juego1\juego\juego4.js" />
+    <Content Include="JuegoPerro\Juego1\juego\level\json\tileSimbolo.js" />
+    <Content Include="JuegoPerro\Juego1\level_1.js" />
+    <Content Include="JuegoPerro\Juego1\level_2.js" />
+    <Content Include="JuegoPerro\Juego1\level_3.js" />
+    <Content Include="JuegoPerro\Juego1\level_4.js" />
+    <Content Include="JuegoPerro\Juego1\level_5.js" />
+    <Content Include="JuegoPerro\Juego1\media\sprites.png" />
+    <Content Include="JuegoPerro\media\sprites.png" />
+    <Content Include="JuegoPerro\metas.png" />
+    <Content Include="JuegoPerro\Nivel1.aspx" />
+    <Content Include="JuegoPerro\Nivel2.aspx" />
+    <Content Include="JuegoPerro\Nivel3.aspx" />
+    <Content Include="JuegoPerro\Nivel4.aspx" />
+    <Content Include="JuegoPerro\Nivel5.aspx" />
+    <Content Include="JuegoPerro\personajes.png" />
+    <Content Include="JuegoPerro\sprites.png" />
+    <Content Include="JuegoPerro\tiles.png" />
+    <Content Include="MasterPage\css\animate.css" />
+    <Content Include="MasterPage\css\bootstrap.min.css" />
+    <Content Include="MasterPage\css\preloader.css" />
+    <Content Include="MasterPage\css\responsive.css" />
+    <Content Include="MasterPage\css\simple-line-icons.css" />
+    <Content Include="MasterPage\css\style.css" />
+    <Content Include="MasterPage\fonts\Simple-Line-Icons.dev.svg" />
+    <Content Include="MasterPage\fonts\Simple-Line-Icons.svg" />
+    <Content Include="MasterPage\img\after_effects.svg" />
+    <Content Include="MasterPage\img\amazon.png" />
+    <Content Include="MasterPage\img\apple-touch-icon-ipad-retina.png" />
+    <Content Include="MasterPage\img\apple-touch-icon-ipad.png" />
+    <Content Include="MasterPage\img\apple-touch-icon-iphone-retina.png" />
+    <Content Include="MasterPage\img\apple-touch-icon-iphone.png" />
+    <Content Include="MasterPage\img\bill.jpg" />
+    <Content Include="MasterPage\img\Blockly.png" />
+    <Content Include="MasterPage\img\curb.png" />
+    <Content Include="MasterPage\img\dan.jpg" />
+    <Content Include="MasterPage\img\elance-odesk.png" />
+    <Content Include="MasterPage\img\eric.png" />
+    <Content Include="MasterPage\img\favicon.png" />
+    <Content Include="MasterPage\img\flash.svg" />
+    <Content Include="MasterPage\img\hero-img.png" />
+    <Content Include="MasterPage\img\icon.png" />
+    <Content Include="MasterPage\img\illustrator.svg" />
+    <Content Include="MasterPage\img\indesign.svg" />
+    <Content Include="MasterPage\img\payoneer.png" />
+    <Content Include="MasterPage\img\photoshop.svg" />
+    <Content Include="MasterPage\img\ramil.jpg" />
+    <Content Include="MasterPage\img\s1.png" />
+    <Content Include="MasterPage\img\s2.png" />
+    <Content Include="MasterPage\img\s3.png" />
+    <Content Include="MasterPage\img\s4.png" />
+    <Content Include="MasterPage\img\s5.png" />
+    <Content Include="MasterPage\img\s6.png" />
+    <Content Include="MasterPage\img\Startblockly-BG.png" />
+    <Content Include="MasterPage\img\Startblockly.png" />
+    <Content Include="MasterPage\img\Startblocklys.png" />
+    <Content Include="MasterPage\img\trianglify-background.svg" />
+    <Content Include="MasterPage\img\unnamed.png" />
+    <Content Include="MasterPage\img\user.png" />
+    <Content Include="MasterPage\js\bootstrap.min.js" />
+    <Content Include="MasterPage\js\drifolio.js" />
+    <Content Include="MasterPage\js\jquery-latest.min.js" />
+    <Content Include="MasterPage\js\jquery.easing.min.js" />
+    <Content Include="MasterPage\js\jquery.jribbble-1.0.1.ugly.js" />
+    <Content Include="MasterPage\js\jquery.nicescroll.min.js" />
+    <Content Include="MasterPage\js\wow.min.js" />
+    <Content Include="MasterPage\JuegoPato.aspx" />
+    <Content Include="MasterPage\JuegoPato2.aspx" />
+    <Content Include="MasterPage\JuegoPato3.aspx" />
+    <Content Include="Recursos\imgenes\12.png" />
+    <Content Include="Recursos\imgenes\blockly-550x412.jpg" />
+    <Content Include="Recursos\imgenes\Blockly.jpg" />
+    <Content Include="Recursos\imgenes\c355d9f8-9fff-4606-9a23-e99ceb1776f7.PNG._CB290287635_.png" />
+    <Content Include="Recursos\imgenes\Captura-de-pantalla-2015-09-07-a-las-12.53.38.png" />
+    <Content Include="Recursos\imgenes\images.jpg" />
+    <Content Include="Recursos\imgenes\IMG_0093.png" />
+    <Content Include="Recursos\imgenes\niños-colores.png" />
+    <Content Include="Recursos\imgenes\niño-con-las-manos-pintadas-de-colores-little-boy-with-color-hands.jpg" />
+    <Content Include="Recursos\imgenes\pato.png" />
+    <Content Include="Recursos\imgenes\static_avatar.png" />
+    <Content Include="Recursos\js\blockly_compressed.js" />
+    <Content Include="Recursos\js\blocks_compressed.js" />
+    <Content Include="Recursos\js\bootstrap.js" />
+    <Content Include="Recursos\js\bootstrap.min.js" />
+    <Content Include="Recursos\js\cbpAnimatedHeader.js" />
+    <Content Include="Recursos\js\cbpAnimatedHeader.min.js" />
+    <Content Include="Recursos\js\chart.js" />
+    <Content Include="Recursos\js\classie.js" />
+    <Content Include="Recursos\js\codigo.js" />
+    <Content Include="Recursos\js\contact_me.js" />
+    <Content Include="Recursos\js\Diccionario.js" />
+    <Content Include="Recursos\js\en.js" />
+    <Content Include="Recursos\js\freelancer.js" />
+    <Content Include="Recursos\js\javascript_compressed.js" />
+    <Content Include="Recursos\js\jqBootstrapValidation.js" />
+    <Content Include="Recursos\js\jquery.js" />
+    <Content Include="Recursos\js\jquery.min.js" />
+    <Content Include="Recursos\js\scripts.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BO\BlockBO.cs" />
+    <Compile Include="BO\UsuarioBO.cs" />
+    <Compile Include="DAO\BlocksDAO.cs" />
+    <Compile Include="DAO\Connection.cs" />
+    <Compile Include="DAO\UsuariosDAO.cs" />
+    <Compile Include="GUI\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Juegos.aspx.cs">
+      <DependentUpon>Juegos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Juegos.aspx.designer.cs">
+      <DependentUpon>Juegos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Proyectos.aspx.cs">
+      <DependentUpon>Proyectos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Proyectos.aspx.designer.cs">
+      <DependentUpon>Proyectos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Traductor.aspx.cs">
+      <DependentUpon>Traductor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Traductor.aspx.designer.cs">
+      <DependentUpon>Traductor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JuegoPerro\Nivel1.aspx.cs">
+      <DependentUpon>Nivel1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JuegoPerro\Nivel1.aspx.designer.cs">
+      <DependentUpon>Nivel1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JuegoPerro\Nivel2.aspx.cs">
+      <DependentUpon>Nivel2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JuegoPerro\Nivel2.aspx.designer.cs">
+      <DependentUpon>Nivel2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JuegoPerro\Nivel3.aspx.cs">
+      <DependentUpon>Nivel3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JuegoPerro\Nivel3.aspx.designer.cs">
+      <DependentUpon>Nivel3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JuegoPerro\Nivel4.aspx.cs">
+      <DependentUpon>Nivel4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JuegoPerro\Nivel4.aspx.designer.cs">
+      <DependentUpon>Nivel4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JuegoPerro\Nivel5.aspx.cs">
+      <DependentUpon>Nivel5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JuegoPerro\Nivel5.aspx.designer.cs">
+      <DependentUpon>Nivel5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\JuegoDibujar.aspx.cs">
+      <DependentUpon>JuegoDibujar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\JuegoDibujar.aspx.designer.cs">
+      <DependentUpon>JuegoDibujar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\JuegoDibujar2.aspx.cs">
+      <DependentUpon>JuegoDibujar2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\JuegoDibujar2.aspx.designer.cs">
+      <DependentUpon>JuegoDibujar2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\JuegoDibujar3.aspx.cs">
+      <DependentUpon>JuegoDibujar3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\JuegoDibujar3.aspx.designer.cs">
+      <DependentUpon>JuegoDibujar3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\JuegoPato.aspx.cs">
+      <DependentUpon>JuegoPato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\JuegoPato.aspx.designer.cs">
+      <DependentUpon>JuegoPato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\JuegoPato2.aspx.cs">
+      <DependentUpon>JuegoPato2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\JuegoPato2.aspx.designer.cs">
+      <DependentUpon>JuegoPato2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\JuegoPato3.aspx.cs">
+      <DependentUpon>JuegoPato3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\JuegoPato3.aspx.designer.cs">
+      <DependentUpon>JuegoPato3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\BlocksCTRL.cs" />
+    <Compile Include="Service\UserCTRL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Archives\.gitignore" />
+    <Content Include="Archives\.jshintignore" />
+    <Content Include="Archives\appengine\app.yaml" />
+    <Content Include="Archives\appengine\index.yaml" />
+    <Content Include="Archives\appengine\index_redirect.py" />
+    <Content Include="Archives\appengine\storage.py" />
+    <Content Include="Archives\build.py" />
+    <Content Include="Archives\COPYING" />
+    <Content Include="Archives\demos\plane\soy\COPYING" />
+    <Content Include="Archives\demos\plane\soy\README" />
+    <Content Include="Archives\demos\plane\template.soy" />
+    <Content Include="Archives\demos\plane\xlf\extracted_msgs.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_ar.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_be-tarask.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_br.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_ca.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_da.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_de.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_el.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_en.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_es.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_fa.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_fr.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_he.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_hrx.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_hu.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_ia.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_is.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_it.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_ja.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_ko.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_ms.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_nb.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_nl.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_pl.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_pms.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_pt-br.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_ro.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_ru.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_sc.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_sv.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_th.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_tr.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_uk.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_vi.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_zh-hans.xlf" />
+    <Content Include="Archives\demos\plane\xlf\translated_msgs_zh-hant.xlf" />
+    <Content Include="Archives\i18n\common.py" />
+    <Content Include="Archives\i18n\create_messages.py" />
+    <Content Include="Archives\i18n\dedup_json.py" />
+    <Content Include="Archives\i18n\json_to_js.py" />
+    <Content Include="Archives\i18n\js_to_json.py" />
+    <Content Include="Archives\i18n\tests.py" />
+    <Content Include="Archives\i18n\xliff_to_json.py" />
+    <Content Include="Archives\media\click.ogg" />
+    <Content Include="Archives\media\delete.ogg" />
+    <Content Include="Archives\media\disconnect.ogg" />
+    <Content Include="Archives\media\Thumbs.db" />
+    <Content Include="Archives\msg\json\ar.json" />
+    <Content Include="Archives\msg\json\az.json" />
+    <Content Include="Archives\msg\json\bcc.json" />
+    <Content Include="Archives\msg\json\be-tarask.json" />
+    <Content Include="Archives\msg\json\bg.json" />
+    <Content Include="Archives\msg\json\bn.json" />
+    <Content Include="Archives\msg\json\br.json" />
+    <Content Include="Archives\msg\json\ca.json" />
+    <Content Include="Archives\msg\json\cs.json" />
+    <Content Include="Archives\msg\json\da.json" />
+    <Content Include="Archives\msg\json\de.json" />
+    <Content Include="Archives\msg\json\el.json" />
+    <Content Include="Archives\msg\json\en.json" />
+    <Content Include="Archives\msg\json\es.json" />
+    <Content Include="Archives\msg\json\fa.json" />
+    <Content Include="Archives\msg\json\fi.json" />
+    <Content Include="Archives\msg\json\fr.json" />
+    <Content Include="Archives\msg\json\he.json" />
+    <Content Include="Archives\msg\json\hi.json" />
+    <Content Include="Archives\msg\json\hrx.json" />
+    <Content Include="Archives\msg\json\hu.json" />
+    <Content Include="Archives\msg\json\ia.json" />
+    <Content Include="Archives\msg\json\id.json" />
+    <Content Include="Archives\msg\json\is.json" />
+    <Content Include="Archives\msg\json\it.json" />
+    <Content Include="Archives\msg\json\ja.json" />
+    <Content Include="Archives\msg\json\ko.json" />
+    <Content Include="Archives\msg\json\lb.json" />
+    <Content Include="Archives\msg\json\lrc.json" />
+    <Content Include="Archives\msg\json\lt.json" />
+    <Content Include="Archives\msg\json\mk.json" />
+    <Content Include="Archives\msg\json\ms.json" />
+    <Content Include="Archives\msg\json\nb.json" />
+    <Content Include="Archives\msg\json\nl.json" />
+    <Content Include="Archives\msg\json\oc.json" />
+    <Content Include="Archives\msg\json\pl.json" />
+    <Content Include="Archives\msg\json\pms.json" />
+    <Content Include="Archives\msg\json\pt-br.json" />
+    <Content Include="Archives\msg\json\pt.json" />
+    <Content Include="Archives\msg\json\qqq.json" />
+    <Content Include="Archives\msg\json\ro.json" />
+    <Content Include="Archives\msg\json\ru.json" />
+    <Content Include="Archives\msg\json\sc.json" />
+    <Content Include="Archives\msg\json\shn.json" />
+    <Content Include="Archives\msg\json\sk.json" />
+    <Content Include="Archives\msg\json\sq.json" />
+    <Content Include="Archives\msg\json\sr.json" />
+    <Content Include="Archives\msg\json\sv.json" />
+    <Content Include="Archives\msg\json\synonyms.json" />
+    <Content Include="Archives\msg\json\ta.json" />
+    <Content Include="Archives\msg\json\tcy.json" />
+    <Content Include="Archives\msg\json\th.json" />
+    <Content Include="Archives\msg\json\tl.json" />
+    <Content Include="Archives\msg\json\tlh.json" />
+    <Content Include="Archives\msg\json\tr.json" />
+    <Content Include="Archives\msg\json\uk.json" />
+    <Content Include="Archives\msg\json\vi.json" />
+    <Content Include="Archives\msg\json\zh-hans.json" />
+    <Content Include="Archives\msg\json\zh-hant.json" />
+    <Content Include="Archives\package.json" />
+    <Content Include="Archives\README.md" />
+    <Content Include="MasterPage\Master.Master" />
+    <Content Include="MasterPage\fonts\Simple-Line-Icons.eot" />
+    <Content Include="MasterPage\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="MasterPage\fonts\Simple-Line-Icons.woff" />
+    <Content Include="MasterPage\img\.DS_Store" />
+    <Content Include="MasterPage\.git\COMMIT_EDITMSG" />
+    <Content Include="MasterPage\.git\config" />
+    <Content Include="MasterPage\.git\FETCH_HEAD" />
+    <Content Include="MasterPage\.git\HEAD" />
+    <Content Include="MasterPage\.git\index" />
+    <Content Include="MasterPage\.git\logs\HEAD" />
+    <Content Include="MasterPage\.git\logs\refs\heads\master" />
+    <Content Include="MasterPage\.git\logs\refs\remotes\origin\gh-pages" />
+    <Content Include="MasterPage\.git\logs\refs\remotes\origin\master" />
+    <Content Include="MasterPage\.git\objects\00\48e464ed474fbba8923a8267bdcc2920b83ac4" />
+    <Content Include="MasterPage\.git\objects\02\fdc6d565d4213365a132ef8b1dd5461d642953" />
+    <Content Include="MasterPage\.git\objects\03\068001c1efe23b14762548b435d1bb357d871d" />
+    <Content Include="MasterPage\.git\objects\04\40eeccd9ae3bea7355d2baf96451011c948d2f" />
+    <Content Include="MasterPage\.git\objects\09\665e343f8a074f685da0e33815ac67ae81527c" />
+    <Content Include="MasterPage\.git\objects\11\4be522b759dbf6c225c7150c34605320a1fbf2" />
+    <Content Include="MasterPage\.git\objects\12\a4288a5e373eb93743a9dac74d7972a771d6ca" />
+    <Content Include="MasterPage\.git\objects\14\7049eaf4bb164b5944e5aba305136a9185448f" />
+    <Content Include="MasterPage\.git\objects\19\fb9c1d84d8c9e7125dd81809ee1ec7b2a0f5ec" />
+    <Content Include="MasterPage\.git\objects\1c\0e80dfc743d5146b49a62c4b1c89c9446dd6a8" />
+    <Content Include="MasterPage\.git\objects\1e\1c69c1fa16cee9f7e7b631580ada0e72ef086c" />
+    <Content Include="MasterPage\.git\objects\21\24a96db504be739cdc19b7471105f5981d6aa6" />
+    <Content Include="MasterPage\.git\objects\21\94f1f87ffb06e2664e4e56e8656060967e4f9f" />
+    <Content Include="MasterPage\.git\objects\23\2c8ff3f1d597a4c7fbaa9611f6fd47df57c946" />
+    <Content Include="MasterPage\.git\objects\25\6854f59caaa41e155a7560183214a7f85d32fd" />
+    <Content Include="MasterPage\.git\objects\29\cbae5501a627672b53138ed946d2b605baeab8" />
+    <Content Include="MasterPage\.git\objects\2f\01de8b0067695377bd081dbe5241b37c9856d6" />
+    <Content Include="MasterPage\.git\objects\30\531a96071161e2e37f481ede9676aec0b76ad6" />
+    <Content Include="MasterPage\.git\objects\32\10621ae6e13ec809c3dcfae6d71b05ee8d575a" />
+    <Content Include="MasterPage\.git\objects\33\cc0bad3fd1737190fa609965e2a27c94d1066e" />
+    <Content Include="MasterPage\.git\objects\36\3a15613a7bcc6fb58932d3ffffafc2e614c5a6" />
+    <Content Include="MasterPage\.git\objects\36\54d56d900db07f93929ef29950c84d9eb0b0d0" />
+    <Content Include="MasterPage\.git\objects\36\a38995a11a8f0bc06d62dae2f4295049e8cd57" />
+    <Content Include="MasterPage\.git\objects\38\3e0dd5f9f37475069c847c4acd5d39cb1488a5" />
+    <Content Include="MasterPage\.git\objects\3d\f04dc274bdf0b986ed9df663fd1068a66d2121" />
+    <Content Include="MasterPage\.git\objects\46\19473d40febea5b65e5e75dc406c2fd37475f8" />
+    <Content Include="MasterPage\.git\objects\48\f02a150a86fad8efb7d2f9e68338ba723f5ec6" />
+    <Content Include="MasterPage\.git\objects\49\d101f7e1e8ec6b7a0f22c132bdfbc2dab29b29" />
+    <Content Include="MasterPage\.git\objects\50\416f31897c642c3637da9cae7f5144e9fdb33b" />
+    <Content Include="MasterPage\.git\objects\50\df1e47dcfb368bb5b39cbe04e2d3f50ee5d829" />
+    <Content Include="MasterPage\.git\objects\50\f47fc7da5845e487c538d186053055b5012e5d" />
+    <Content Include="MasterPage\.git\objects\51\27913f43f745caa804696ee66b34695ebd9a3b" />
+    <Content Include="MasterPage\.git\objects\52\81abd14cd7b2b65ee292b31b1f4e9f44a9b331" />
+    <Content Include="MasterPage\.git\objects\57\d46a2947c090a5e17c717d4a7a36e8222333b7" />
+    <Content Include="MasterPage\.git\objects\59\7cd85bbfaa7a6bdace06c9914e282e44e726d5" />
+    <Content Include="MasterPage\.git\objects\5b\5fdde00d1bf5ee75d1b66764ea706a20bcd9df" />
+    <Content Include="MasterPage\.git\objects\5f\5b0b513784fbdebcae842d3611aad1c8267300" />
+    <Content Include="MasterPage\.git\objects\62\07525e704d792a027b0c4c11f117519cb44076" />
+    <Content Include="MasterPage\.git\objects\62\e526e00c8f1e9da32e6155bc35412212b840d1" />
+    <Content Include="MasterPage\.git\objects\6c\9f7c51b6274a9c70ae6f1cbd2194532a7673d7" />
+    <Content Include="MasterPage\.git\objects\70\0b3046d0622387b39f9c6213202206d9dfc1fc" />
+    <Content Include="MasterPage\.git\objects\71\c5e45ecfa83f00f28864aac45789f76c322853" />
+    <Content Include="MasterPage\.git\objects\7b\278ef84d613218f085a7f96e3ad35fa1b98ae0" />
+    <Content Include="MasterPage\.git\objects\7f\3bac5fff8d519e68718c5514b555ce4f0b8e51" />
+    <Content Include="MasterPage\.git\objects\84\01470d3c16a407e2e105438b1ac11d119eb913" />
+    <Content Include="MasterPage\.git\objects\85\7cc570d00a5c68a1b6b9c9883d6624e9ed3c91" />
+    <Content Include="MasterPage\.git\objects\87\7865e7df456bc27fd53a8c1e3eef28ac242563" />
+    <Content Include="MasterPage\.git\objects\87\a40ca716dad71fa07307fc4db974ad992efcf2" />
+    <Content Include="MasterPage\.git\objects\94\a7cdee74e0cc0e0e01b4fdb0a1ee02663f98f1" />
+    <Content Include="MasterPage\.git\objects\97\6c97174b94ee5233e7ca7ab4a0cc39a8d0eb40" />
+    <Content Include="MasterPage\.git\objects\9a\ced60cd94ddec6ba3bd336eded769ab9216e50" />
+    <Content Include="MasterPage\.git\objects\9c\368f1e27cd2ad16906fab025f8a1bce8b3f3ff" />
+    <Content Include="MasterPage\.git\objects\a5\3a6c8d4e6eaf77f19d4147abc7d4caa4e525e9" />
+    <Content Include="MasterPage\.git\objects\a7\b332e99cb0ccba7d34f549713f72807697e7c7" />
+    <Content Include="MasterPage\.git\objects\a9\368284f37d5f5f0b28de4dec872767fd59150f" />
+    <Content Include="MasterPage\.git\objects\a9\aabad4b7d155bd010c1419a1e57edf9ace5ea4" />
+    <Content Include="MasterPage\.git\objects\ac\c73a4d24b154e4b9ed0a72cc4bb2d362ff6a9b" />
+    <Content Include="MasterPage\.git\objects\b3\ade591c6bf680e46f82041afb846c77ec34865" />
+    <Content Include="MasterPage\.git\objects\b6\738f9b686d94348e5352b91bf78fd97e0ad5c8" />
+    <Content Include="MasterPage\.git\objects\b8\023ab3a48a835d82127059a4f560a4c8988b49" />
+    <Content Include="MasterPage\.git\objects\bf\80b4c8d589f011fd4054ee8dcb4eb66dc8562f" />
+    <Content Include="MasterPage\.git\objects\c0\123dfdb3c013ed747e68c134d8bd66c52cfba5" />
+    <Content Include="MasterPage\.git\objects\c0\23c0cd75e4f650814bc13791486f0b3595bb38" />
+    <Content Include="MasterPage\.git\objects\c3\c6013468428e1f7958e524d20c2b82da4d1b2c" />
+    <Content Include="MasterPage\.git\objects\c3\ee0fa3cc859b234425d072f82ce91928bd962e" />
+    <Content Include="MasterPage\.git\objects\c4\aa9b292f765cd13aff68004e409f48153de4df" />
+    <Content Include="MasterPage\.git\objects\c6\a6452d249f902a80b0775bf01352cbca6f284b" />
+    <Content Include="MasterPage\.git\objects\cc\3660a842c9e1b5cf236c392418e0c29011cc07" />
+    <Content Include="MasterPage\.git\objects\d2\58f623388e171cac9fcf1e25e91a0b3cdbd885" />
+    <Content Include="MasterPage\.git\objects\d4\4dbd9a859c569900d0ce876e79671096345a76" />
+    <Content Include="MasterPage\.git\objects\d8\a4b3a30d7daafbecf5b1fa8fd04072e9ea4fa4" />
+    <Content Include="MasterPage\.git\objects\d8\cc62d7bc37c4e2394696ceb3bd7cc5ab19a06a" />
+    <Content Include="MasterPage\.git\objects\d9\f920651ee37a33dec326c80a582d7deb6dbc82" />
+    <Content Include="MasterPage\.git\objects\da\0d72423df86798210b2b7ec3e1df349336fcaa" />
+    <Content Include="MasterPage\.git\objects\da\cf2e1861be0377092a7fb9a6779b11b837241f" />
+    <Content Include="MasterPage\.git\objects\dc\d40a4ffcfe2951cbad914fd15ae8c46184b69d" />
+    <Content Include="MasterPage\.git\objects\e2\7396f24f74c9236c878570f8dd6bfab733c7f1" />
+    <Content Include="MasterPage\.git\objects\e3\38f26b79887fca38b2db72efbf2066e2b30547" />
+    <Content Include="MasterPage\.git\objects\e3\5ce83b180f8c083a0ad57275ea8bc64ff8da27" />
+    <Content Include="MasterPage\.git\objects\e4\3dd17faeba188981c33a164eff3a6686365ab9" />
+    <Content Include="MasterPage\.git\objects\e5\beb280b686e3ba8f9ca92a8f7b71e003196298" />
+    <Content Include="MasterPage\.git\objects\e6\0e3d5bb41eac21546fd9ce4cf35f124ee70529" />
+    <Content Include="MasterPage\.git\objects\e6\2a08c940ff2c555b3b51fadd470f3add83f973" />
+    <Content Include="MasterPage\.git\objects\e7\304e5036dbc82b8359fa3ac433baae087e6387" />
+    <Content Include="MasterPage\.git\objects\e7\64efbf5f68f6246870cdf91fe9ea7caff8f032" />
+    <Content Include="MasterPage\.git\objects\e7\b114fe7f96188f58444aebbdb64b8ee5f05448" />
+    <Content Include="MasterPage\.git\objects\e9\0bd187b569bad72315b12dadda313213840bda" />
+    <Content Include="MasterPage\.git\objects\e9\7414a70041821d83e05670b1f37557af70741b" />
+    <Content Include="MasterPage\.git\objects\f4\ae4b2018cc21fc34c8228731bb2bb39ca966b3" />
+    <Content Include="MasterPage\.git\objects\f6\1e602e863cb1322cdf8edd8eba7310092342d1" />
+    <Content Include="MasterPage\.git\objects\f7\84ce8f691bec8f353de3075907e91cf9b2c9e8" />
+    <Content Include="MasterPage\.git\objects\f8\4023a81e23b7a3b5436ec3ee4bc386c015dd1e" />
+    <Content Include="MasterPage\.git\objects\fa\216b6cf76c9ceeafae9688ae4d2fa5ac37d622" />
+    <Content Include="MasterPage\.git\objects\fb\a8e439312b490a6ff5ad0f1c0c9d47836e5ac9" />
+    <Content Include="MasterPage\.git\objects\fe\1b05ddef1861acd5ed3d8260755bed3e3da676" />
+    <Content Include="MasterPage\.git\ORIG_HEAD" />
+    <Content Include="MasterPage\.git\refs\heads\master" />
+    <Content Include="MasterPage\.git\refs\remotes\origin\gh-pages" />
+    <Content Include="MasterPage\.git\refs\remotes\origin\master" />
+    <Content Include="MasterPage\.DS_Store" />
+    <Content Include="MasterPage\JuegoFlappyBird\assets\fontawesome-webfont-be0584438c9b22a95d72e4aaebfe12ed.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="blockly\media\common_images\" />
+    <Folder Include="blockly\media\skins\studio\" />
+    <Folder Include="JuegoPerro\Imagenes\" />
+    <Folder Include="MasterPage\.git\media\objects\" />
+    <Folder Include="MasterPage\.git\media\tmp\" />
+    <Folder Include="MasterPage\.git\objects\info\" />
+    <Folder Include="MasterPage\.git\objects\pack\" />
+    <Folder Include="MasterPage\.git\refs\tags\" />
+    <Folder Include="MasterPage\JuegoFlappyBird\flappy\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1395</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1395/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
